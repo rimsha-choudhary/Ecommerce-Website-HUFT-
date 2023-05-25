@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Heads Up For Tails | Products</title>
+	<!-- Font Link -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"> 
+	<!-- Font Awesome CDN Link -->
+	<!-- Custom CSS File Link -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+</head>
+
+<body>
+	<!-- Head Section Start -->
+	<div class="container">
+		<!-- Navigation Header Start -->
+		<div class="navbar">
+			<!-- Site Logo -->
+			<div class="logo">
+				<a href="index.html"><img src="img/logo.png" alt="Shop Logo" width="125px"></a>
+			</div>
+			<!-- Navigation Option -->
+			<nav>
+				<ul id="MenuItems">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="products.html">Products</a></li>
+					<li><a href="offers.html">Offers</a></li>
+					<li><a href="account.html">Account</a></li>
+					<li><a href="reviews.html">Reviews</a></li>
+					<li><a href="aboutUs.html">About</a></li>
+					<li><a href="contactus.html">Contact</a></li>
+				</ul>
+			</nav>
+			<!-- Cart Icon -->
+			<a href="cart.html"><img src="img/cart.png" width="25px" height="25px" alt="Cart Icon"></a>
+			<img src="img/menu.png" class="menu-icon" onclick="menutoggle()">
+		</div>
+		<!-- Header Navigation End -->
+	</div>
+	<!-- Head Section End -->
+
+	<!--Featured & Latest Product Section Start -->
+	<div class="small-container row container-overlay">
+
+		<div class="row row-2 width-100">
+			<input id="search" class="product-search" placeholder="Search">
+			
+			<h2>All Products</h2>
+			<select class="price-sorting">
+				<option disabled selected>Sort By</option>
+				<option value="l2h">Price: Low to High</option>
+				<option value="h2l">Price: High to Low</option>
+				<!--<option value="featured">Featured</option>
+				<option value="new">Newest Arrivals</option>-->
+			</select>
+		</div>
+		
+		<div class="left-filter-box">
+			<h2>Filters</h2>
+			<div id='filters' class='sections'>
+			  <div class='filter-attributes'>
+				<h4><b>Colour</b></h4>
+				<div class="filter-input-box">
+					<div class="filter-input-sub">
+						<label for="red"><input type='checkbox' class="filter-input" name='colour' id='red' value='red' >Red</label>
+					</div>	
+					<div class="filter-input-sub">
+						<label for="blue"><input type='checkbox' class="filter-input" name='colour' id='blue' value='blue' >Blue</label>
+					</div>	
+					<div class="filter-input-sub">
+						<label for="green"><input type='checkbox' class="filter-input" name='colour' id='green' value='green' >Green</label>
+					</div>	
+					<div class="filter-input-sub">
+						<label for="yellow"><input type='checkbox' class="filter-input" name='colour' id='yellow' value='yellow' >Yellow</label>
+					</div>	
+				</div>	
+			  </div>
+			  <div class='filter-attributes'>
+				<h4><b>Size</b></h4>
+				
+				<div class="filter-input-sub">
+					<label for="small"><input type='checkbox' name='size' id='small' value='small' >Small</label>
+				</div>
+				<div class="filter-input-sub">
+					<label for="medium"><input type='checkbox' name='size' id='medium' value='medium' >Medium</label>
+				</div>
+				<div class="filter-input-sub">
+					<label for="large"><input type='checkbox' name='size' id='large' value='large' >Large</label>
+				</div>
+				<div class="filter-input-sub">
+					<label for="xlarge"><input type='checkbox' name='size' id='xlarge' value='xlarge' >X-Large</label>
+				</div>
+			  </div>
+			  <div>
+				<br>
+				<input type='button' id='none' class="clear-all" value='Clear all'>
+			  </div>
+			</div>
+		</div>
+		
+		<!-- Featured Product Start -->
+		<div class="row products-grid right-product-box">
+			<!--Featured Product-1 -->
+			<div class="col-4 product" data-price="29.99" data-colour='red' data-size='large'>
+				<a href="product-details.html?1">
+					<img src="img/product-1.jpg">
+					<h4>HUFT Reversible Dog Jacket</h4>
+					<p>Reversible, washable dog jacket</p>
+					<div class="rating">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-o"></i>
+					</div>
+					<p>$29.99</p>
+					</a>
+			</div>
+
+			<!--Featured Product-2 -->
+			<div class="col-4 product" data-price="24.99" data-colour='yellow' data-size='medium'>
+				<a href="product-details.html?2">
+				<img src="img/product-2.jpg">
+				<h4>HUFT Cable Knit Dog Sweater</h4>
+				<p>Warm, lightweight dog sweater</p>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p class="product-card">$24.99</p>
+				</a>
+			</div>
+
+			<!--Featured Product-3 -->
+			<div class="col-4 product" data-price="29.99" data-colour='green' data-size='small'>
+				<a href="product-details.html?3">
+				<img src="img/product-3.jpg">
+				<h4>HUFT Drizzle Buddy Dog Raincoat</h4>
+				<p>Easy to wear, comfortable, hooded dog raincoat</p>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+				</div>
+				<p>$29.99</p>
+				</a>
+			</div>
+
+			<!--Featured Product-4 -->
+			<div class="col-4 product" data-price="12.00" data-colour='red' data-size='large'>
+				<a href="product-details.html?4">
+				<img src="img/product-4.jpg">
+				<h4>HUFT I Put The Wag In The Swag Dog T-shirt</h4>
+				<p>Printed, easy to slip on dog clothing</p>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p>$12.00</p>
+				</a>
+			</div>
+		
+		<!-- Featured Product End -->
+		
+		<!-- Latest Product Start -->
+		
+			<!--Latest Product-1 -->
+			<div class="col-4 product" data-price="39.99" data-colour='blue' data-size='small'>
+				<a href="product-details.html?5">
+				<img src="img/product-5.jpg">
+				<h4>HUFT Personalised Tuxedo for Dogs</h4>
+				<p>Easy to wear, cotton-blend dog clothing</p>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p>$39.99</p>
+				</a>
+			</div>
+
+			<!--Latest Product-2 -->
+			<div class="col-4 product" data-price="39.99" data-colour='blue' data-size='large'>
+				<a href="product-details.html?6">
+				<img src="img/product-6.jpg">
+				<h4>HUFT Personalised Dog Lehenga</h4>
+				<p>Luxurious, easy to wear, festive dog clothing</p>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p>$39.99</p>
+				</a>
+			</div>
+
+			<!--Latest Product-3 -->
+			<div class="col-4 product" data-price="15.99" data-colour='blue' data-size='medium'>
+				<a href="product-details.html?7">
+				<img src="img/product-7.jpg">
+				<h4>HUFT Sweat Shirt For Dogs</h4>
+				<p>Soft, stretchable, easy to wear dog sweatshirt</p>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+				</div>
+				<p>$15.99</p>
+				</a>
+			</div>
+
+			<!--Latest Product-4 -->
+			<div class="col-4 product" data-price="20.00" data-colour='green' data-size='medium'>
+				<a href="product-details.html?8">
+				<img src="img/product-8.jpg">
+				<h4>HUFT Solid Polo Dog T-Shirt</h4>
+				<p>Stylish, comfortable, cotton-blend dog clothing</p>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p>$20.00</p>
+				</a>
+			</div>
+		
+
+		
+			<!--Latest Product-5 -->
+			<div class="col-4 product" data-price="19.99" data-colour='green' data-size='large'>
+				<a href="product-details.html?9">
+				<img src="img/product-9.jpg">
+				<h4>HUFT The Indian Indigo Print Dog Kurta</h4>
+				<p>Comfortable, lightweight, printed dog clothing</p>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p>$19.99</p>
+				</a>
+			</div>
+
+			<!--Latest Product-6 -->
+			<div class="col-4 product" data-price="19.99" data-colour='red' data-size='xlarge'>
+				<a href="product-details.html?10">
+				<img src="img/product-10.jpg">
+				<h4>HUFT Twinning - T-Shirt For Humans</h4>
+				<p>Lightweight, comfortable & easy to wear</p>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p>$19.99</p>
+				</a>
+			</div>
+
+			<!--Latest Product-7 -->
+			<div class="col-4 product" data-price="19.99" data-colour='yellow' data-size='small'>
+				<a href="product-details.html?11">
+				<img src="img/product-11.jpg">
+				<h4>HUFT Twinning - T-Shirt For Dogs</h4>
+				<p>Lightweight, comfortable & easy to wear</p>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+				</div>
+				<p>$19.99</p>
+				</a>
+			</div>
+
+			<!--Latest Product-8 -->
+			<div class="col-4 product" data-price="5.00" data-colour='red' data-size='small'>
+				<a href="product-details.html?12">
+				<img src="img/product-12.jpg">
+				<h4>HUFT Bloom Wildly Scarf For Cats</h4>
+				<p>Elegant, printed accessories</p>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p>$5.00</p>
+				</a>
+			</div>
+		</div>
+		
+		
+		<ul class="page-btn pagination justify-content-center pagination-sm"></ul>
+		
+	</div>
+	<!-- Featured & Latest Product Section End -->
+
+	<!-- Footer Section Start-->
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-1">
+					<h3>Download Our App</h3>
+					<p>Download App for Android and IOS Device</p>
+					<div class="app-logo">
+						<img src="img/play-store.png">
+						<img src="img/app-store.png">
+					</div>
+				</div>
+
+				<div class="footer-col-2">
+					<img src="img/logo-black.PNG">
+					<p> Collars, Leashes, Harnesses | HUFT Offers | Dog Clothes | Dog T-shirts & Shirts </p>
+				</div>
+
+				<div class="footer-col-3">
+					<h3>Useful Link</h3>
+					<ul>
+						<li>Cuppons</li>
+						<li>Blog Post</li>
+						<li>Return Policy</li>
+						<li>Join Appiliate</li>
+					</ul>
+				</div>
+
+				<div class="footer-col-4">
+					<h3>Follow us</h3>
+					<ul>
+						<li>Facebook</li>
+						<li>Twitter</li>
+						<li>Instagram</li>
+						<li>YouTube</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<p class="copyright">&#169; Copyright-2022 | Heads Up For Tails</p>
+		</div>
+	</div>
+	<!-- Footer Section End-->
+</body>
+</html>

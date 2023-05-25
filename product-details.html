@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Heads Up For Tails | Products</title>
+	<!-- Font Link -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"> 
+	<!-- Font Awesome CDN Link -->
+	<!-- Custom CSS File Link -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+</head>
+
+<body>
+	<!-- Head Section Start -->
+	<div class="container">
+		<!-- Navigation Header Start -->
+		<div class="navbar">
+			<!-- Site Logo -->
+			<div class="logo">
+				<a href="index.html"><img src="img/logo.png" alt="Shop Logo" width="125px"></a>
+			</div>
+			<!-- Navigation Option -->
+			<nav>
+				<ul id="MenuItems">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="products.html">Products</a></li>
+					<li><a href="offers.html">Offers</a></li>
+					<li><a href="account.html">Account</a></li>
+					<li><a href="reviews.html">Reviews</a></li>
+					<li><a href="aboutUs.html">About</a></li>
+					<li><a href="contactus.html">Contact</a></li>
+				</ul>
+			</nav>
+			<!-- Cart Icon -->
+			<a href="cart.html"><img src="img/cart.png" width="25px" height="25px" alt="Cart Icon"></a>
+			<img src="img/menu.png" class="menu-icon" onclick="menutoggle()">
+		</div>
+		<!-- Header Navigation End -->
+	</div>
+	<!-- Head Section End -->
+
+	<!-- Single Product Details Start -->
+	<div class="small-container single-product product-1">
+		<div class="row">
+			<div class="col-2">
+				<img src="img/product-1.jpg" width="100%" id="productImg1">
+
+				<div class="small-img-row">
+					<div class="small-img-col">
+						<img src="img/product-1.jpg" width="100%" class="small-img1">
+					</div>
+					
+					<div class="small-img-col">
+						<img src="img/1-2.webp" width="100%" class="small-img1">
+					</div>
+
+					<div class="small-img-col">
+						<img src="img/1-3.webp" width="100%" class="small-img1">
+					</div>
+
+					<div class="small-img-col">
+						<img src="img/11-2.jpg" width="100%" class="small-img1">
+					</div>
+				</div>
+			</div>
+
+			<div class="col-2">
+				<h4>HUFT Reversible Dog Jacket</h4>
+				<p>Reversible, washable dog jacket</p>
+				<h4>$29.99</h4>
+				<select id="color1">
+					<option value="" disabled selected>Select Color</option>
+					<option value="Red">Red</option>
+					<option value="Blue">Blue</option>
+					<option value="Green">Green</option>
+					<option value="Yellow">Yellow</option>
+				</select>
+				<select id="size1">
+					<option value="" disabled selected>Select Size</option>
+					<option value="XL">XL</option>
+					<option value="L">L</option>
+					<option value="M">M</option>
+					<option value="S">S</option>
+				</select>
+				<input type="number" value="1" id="qty1">
+				<a href="#" class="btn" onclick="addToCart(1)">Add to Cart</a>
+				<h3>Product Details <i class="fa fa-indent"></i></h3> <br>
+				<li>Quilted For Warmth</li>
+				<li>Adjustable For The Perfect Fit</li>
+				<li>Zip For Easy Closure Around The Neck</li>
+				<li>Leash Opening To Use With Harnesses</li>
+				<li>Comes With A Storage Pouch</li>
+				
+			</div>
+
+		</div>
+	</div>
+	
+	<div class="small-container single-product product-2">
+		<div class="row">
+			<div class="col-2">
+				<img src="img/product-2.jpg" width="100%" id="productImg2">
+
+				<div class="small-img-row">
+					<div class="small-img-col">
+						<img src="img/product-2.jpg" width="100%" class="small-img2">
+					</div>
+					
+					<div class="small-img-col">
+						<img src="img/2-3.webp" width="100%" class="small-img2">
+					</div>
+
+					<div class="small-img-col">
+						<img src="img/2-4.webp" width="100%" class="small-img2">
+					</div>
+
+					<div class="small-img-col">
+						<img src="img/11-2.jpg" width="100%" class="small-img2">
+					</div>
+				</div>
+			</div>
+
+			<div class="col-2">
+				<h4>HUFT Cable Knit Dog Sweater</h4>
+				<p>Warm, lightweight dog sweater</p>
+				<h4>$24.99</h4>
+				<select id="color2">
+					<option value="" disabled selected>Select Color</option>
+					<option value="Red">Red</option>
+					<option value="Blue">Blue</option>
+					<option value="Green">Green</option>
+					<option value="Yellow">Yellow</option>
+				</select>
+				<select id="size2">
+					<option value="" disabled selected>Select Size</option>
+					<option value="XL">XL</option>
+					<option value="L">L</option>
+					<option value="M">M</option>
+					<option value="S">S</option>
+				</select>
+				<input type="number" value="1" id="qty2">
+				<a href="#" class="btn" onclick="addToCart(2)">Add to Cart</a>
+				<h3>Product Details <i class="fa fa-indent"></i></h3> <br>
+				<li>Stylish Cable Knit Design</li>
+				<li>Soft On Your Dog’s Skin</li>
+				<li>Lightweight & Stretchable</li>
+				<li>High Tummy Cut For Male Doggies To Relieve Themselves With Ease</li>
+				<li>Easy To Move In</li>	
+			</div>
+		</div>
+	</div>
+	
+	<div class="small-container single-product product-3">
+		<div class="row">
+			<div class="col-2">
+				<img src="img/product-3.jpg" width="100%" id="productImg3">
+
+				<div class="small-img-row">
+					<div class="small-img-col">
+						<img src="img/product-3.jpg" width="100%" class="small-img3">
+					</div>
+					
+					<div class="small-img-col">
+						<img src="img/3-2.webp" width="100%" class="small-img3">
+					</div>
+
+					<div class="small-img-col">
+						<img src="img/3-3.webp" width="100%" class="small-img3">
+					</div>
+
+					<div class="small-img-col">
+						<img src="img/11-2.jpg" width="100%" class="small-img3">
+					</div>
+				</div>
+			</div>
+
+			<div class="col-2">
+				<h4>HUFT Drizzle Buddy Dog Raincoat</h4>
+				<p>Easy to wear, comfortable, hooded dog raincoat</p>
+				<h4>$29.99</h4>
+				<select id="color3">
+					<option value="" disabled selected>Select Color</option>
+					<option value="Red">Red</option>
+					<option value="Blue">Blue</option>
+					<option value="Green">Green</option>
+					<option value="Yellow">Yellow</option>
+				</select>
+				<select id="size3">
+					<option value="" disabled selected>Select Size</option>
+					<option value="XL">XL</option>
+					<option value="L">L</option>
+					<option value="M">M</option>
+					<option value="S">S</option>
+				</select>
+				<input type="number" value="1" id="qty3">
+				<a href="#" class="btn" onclick="addToCart(3)">Add to Cart</a>
+				<h3>Product Details <i class="fa fa-indent"></i></h3> <br>
+				<li>Polyester Taffeta with nylon fabric inner lining</li>
+				<li>Protects underbelly from muddy splashes</li>
+				<li>Velcro fastening down the front</li>
+				<li>With a hood</li>
+				<li>Leash gap on the back for convenience</li>
+				
+			</div>
+
+		</div>
+	</div>
+	
+	
+	<div class="small-container single-product product-4">
+		<div class="row">
+			<div class="col-2">
+				<img src="img/product-4.jpg" width="100%" id="productImg4">
+
+				<div class="small-img-row">
+					<div class="small-img-col">
+						<img src="img/product-4.jpg" width="100%" class="small-img4">
+					</div>
+					
+					<div class="small-img-col">
+						<img src="img/11-2.jpg" width="100%" class="small-img4">
+					</div>
+
+					<div class="small-img-col">
+						<img src="img/sg.webp" width="100%" class="small-img4">
+					</div>
+
+					<div class="small-img-col">
+						<img src="img/4-3.webp" width="100%" class="small-img4">
+					</div>
+				</div>
+			</div>
+
+			<div class="col-2">
+				<h4>HUFT Personalised Tuxedo for Dogs</h4>
+				<p>Easy to wear, cotton-blend dog clothing</p>
+				<h4>$12.00</h4>
+				<select id="color4">
+					<option value="" disabled selected>Select Color</option>
+					<option value="Red">Red</option>
+					<option value="Blue">Blue</option>
+					<option value="Green">Green</option>
+					<option value="Yellow">Yellow</option>
+				</select>
+				<select id="size4">
+					<option value="" disabled selected>Select Size</option>
+					<option value="XL">XL</option>
+					<option value="L">L</option>
+					<option value="M">M</option>
+					<option value="S">S</option>
+				</select>
+				<input type="number" value="1" id="qty4">
+				<a href="#" class="btn" onclick="addToCart(4)">Add to Cart</a>
+				<h3>Product Details <i class="fa fa-indent"></i></h3> <br>
+				<li>Viscose-lycra fabric</li>
+				<li>Elastic ties for a snug fit</li>
+				<li>Easy to wear</li>
+				<li>Available in different sizes</li>
+				<li>We always recommend pet parental supervision when dogs wear clothes/accessories</li> 
+			</div>
+
+		</div>
+	</div>
+	
+	<div class="small-container single-product product-5">
+		<div class="row">
+			<div class="col-2">
+				<img src="img/product-5.jpg" width="100%" id="productImg5">
+
+				<div class="small-img-row">
+					<div class="small-img-col">
+						<img src="img/product-5.jpg" width="100%" class="small-img5">
+					</div>
+					
+					<div class="small-img-col">
+						<img src="img/11-2.jpg" width="100%" class="small-img5">
+					</div>
+
+					<div class="small-img-col">
+						<img src="img/5-3.webp" width="100%" class="small-img5">
+					</div>
+
+					<div class="small-img-col">
+						<img src="img/5-4.webp" width="100%" class="small-img5">
+					</div>
+				</div>
+			</div>
+
+			<div class="col-2">
+				<h4>HUFT Personalised Tuxedo for Dogs</h4>
+				<p>Easy to wear, cotton-blend dog clothing</p>
+				<h4>$39.99</h4>
+				<select id="color5">
+					<option value="" disabled selected>Select Color</option>
+					<option value="Red">Red</option>
+					<option value="Blue">Blue</option>
+					<option value="Green">Green</option>
+					<option value="Yellow">Yellow</option>
+				</select>
+				<select id="size5">
+					<option value="" disabled selected>Select Size</option>
+					<option value="XL">XL</option>
+					<option value="L">L</option>
+					<option value="M">M</option>
+					<option value="S">S</option>
+				</select>
+				<input type="number" value="1" id="qty5">
+				<a href="#" class="btn" onclick="addToCart(5)">Add to Cart</a>
+				<h3>Product Details <i class="fa fa-indent"></i></h3> <br>
+				<li>Tuxedo for pets</li>
+				<li>Made from comfortable cotton-blend fabric</li>
+				<li>Tailor-made to suit your pet</li>
+				<li>Velcro closure for convenience</li>
+				<li>To be worn only under pet-parent supervision</li>
+			</div>
+		</div>
+	</div>
+	
+	<div class="small-container single-product product-6">
+		<div class="row">
+			<div class="col-2">
+				<img src="img/product-6.jpg" width="100%" id="productImg6">
+
+				<div class="small-img-row">
+					<div class="small-img-col">
+						<img src="img/product-6.jpg" width="100%" class="small-img6">
+					</div>
+					
+					<div class="small-img-col">
+						<img src="img/11-2.jpg" width="100%" class="small-img6">
+					</div>
+
+					<div class="small-img-col">
+						<img src="img/sg.webp" width="100%" class="small-img6">
+					</div>
+
+					<div class="small-img-col">
+						<img src="img/6-4.webp" width="100%" class="small-img6">
+					</div>
+				</div>
+			</div>
+
+			<div class="col-2">
+				<h4>HUFT Personalised Dog Lehenga</h4>
+				<p>Luxurious, easy to wear, festive dog clothing</p>
+				<h4>$39.99</h4>
+				<select id="color6">
+					<option value="" disabled selected>Select Color</option>
+					<option value="Red">Red</option>
+					<option value="Blue">Blue</option>
+					<option value="Green">Green</option>
+					<option value="Yellow">Yellow</option>
+				</select>
+				<select id="size6">
+					<option value="" disabled selected>Select Size</option>
+					<option value="XL">XL</option>
+					<option value="L">L</option>
+					<option value="M">M</option>
+					<option value="S">S</option>
+				</select>
+				<input type="number" value="1" id="qty6">
+				<a href="#" class="btn" onclick="addToCart(6)">Add to Cart</a>
+				<h3>Product Details <i class="fa fa-indent"></i></h3> <br>
+				<li>Brocade polyester silk fabric</li>
+				<li>Velcro closure for convenience</li>
+				<li>To be worn only under pet-parent supervision</li>
+				<li>Washable</li>
+				<li>Made In India</li>
+			</div>
+
+		</div>
+	</div>
+	
+	
+	<div class="small-container single-product product-7">
+		<div class="row">
+			<div class="col-2">
+				<img src="img/product-7.jpg" width="100%" id="productImg7">
+
+				<div class="small-img-row">
+					<div class="small-img-col">
+						<img src="img/product-7.jpg" width="100%" class="small-img7">
+					</div>
+					
+					<div class="small-img-col">
+						<img src="img/11-2.jpg" width="100%" class="small-img7">
+					</div>
+
+					<div class="small-img-col">
+						<img src="img/7-3.webp" width="100%" class="small-img7">
+					</div>
+
+					<div class="small-img-col">
+						<img src="img/7-4.webp" width="100%" class="small-img7">
+					</div>
+				</div>
+			</div>
+
+			<div class="col-2">
+				<h4>HUFT Sweatshirt For Dogs</h4>
+				<p>Soft, stretchable, easy to wear dog sweatshirt</p>
+				<h4>$15.99</h4>
+				<select id="color7">
+					<option value="" disabled selected>Select Color</option>
+					<option value="Red">Red</option>
+					<option value="Blue">Blue</option>
+					<option value="Green">Green</option>
+					<option value="Yellow">Yellow</option>
+				</select>
+				<select id="size7">
+					<option value="" disabled selected>Select Size</option>
+					<option value="XL">XL</option>
+					<option value="L">L</option>
+					<option value="M">M</option>
+					<option value="S">S</option>
+				</select>
+				<input type="number" value="1" id="qty7">
+				<a href="#" class="btn" onclick="addToCart(7)">Add to Cart</a>
+				<h3>Product Details <i class="fa fa-indent"></i></h3> <br>
+				<li>Short Sleeves, Hood & Kangaroo Pocket</li>
+				<li>Quick Snap Velcro Fastening On Neck For Ease of Wear</li>
+				<li>Warm, Cosy & Lightweight</li>
+				<li>High Tummy Cut For Male Doggies To Relieve Themselves With Ease</li>
+				<li>Easy To Wear</li>	
+			</div>
+
+		</div>
+	</div>
+	
+	
+	<div class="small-container single-product product-8">
+		<div class="row">
+			<div class="col-2">
+				<img src="img/product-8.jpg" width="100%" id="productImg8">
+
+				<div class="small-img-row">
+					<div class="small-img-col">
+						<img src="img/product-8.jpg" width="100%" class="small-img8">
+					</div>
+					
+					<div class="small-img-col">
+						<img src="img/11-2.jpg" width="100%" class="small-img8">
+					</div>
+
+					<div class="small-img-col">
+						<img src="img/8-3.webp" width="100%" class="small-img8">
+					</div>
+
+					<div class="small-img-col">
+						<img src="img/8-4.webp" width="100%" class="small-img8">
+					</div>
+				</div>
+			</div>
+
+			<div class="col-2">
+				<h4>HUFT Solid Polo Dog T-Shirt</h4>
+				<p>Stylish, comfortable, cotton-blend dog clothing</p>
+				<h4>$20.00</h4>
+				<select id="color8">
+					<option value="" disabled selected>Select Color</option>
+					<option value="Red">Red</option>
+					<option value="Blue">Blue</option>
+					<option value="Green">Green</option>
+					<option value="Yellow">Yellow</option>
+				</select>
+				<select id="size8">
+					<option value="" disabled selected>Select Size</option>
+					<option value="XL">XL</option>
+					<option value="L">L</option>
+					<option value="M">M</option>
+					<option value="S">S</option>
+				</select>
+				<input type="number" value="1" id="qty8">
+				<a href="#" class="btn" onclick="addToCart(8)">Add to Cart</a>
+				<h3>Product Details <i class="fa fa-indent"></i></h3> <br>
+				<li>Fabric: 60% Cotton, 40% Polyester Pique</li>
+				<li>Short sleeves, contrasting collar, buttons, embroideryr</li>
+				<li>Ribbed details</li>
+				<li>Easy to wear</li>
+				<li>Washable</li>
+			</div>
+
+		</div>
+	</div>
+	
+	<div class="small-container single-product product-9">
+		<div class="row">
+			<div class="col-2">
+				<img src="img/product-9.jpg" width="100%" id="productImg9">
+
+				<div class="small-img-row">
+					<div class="small-img-col">
+						<img src="img/product-9.jpg" width="100%" class="small-img9">
+					</div>
+					
+					<div class="small-img-col">
+						<img src="img/11-2.jpg" width="100%" class="small-img9">
+					</div>
+
+					<div class="small-img-col">
+						<img src="img/9-3.webp" width="100%" class="small-img9">
+					</div>
+
+					<div class="small-img-col">
+						<img src="img/9-4.webp" width="100%" class="small-img9">
+					</div>
+				</div>
+			</div>
+
+			<div class="col-2">
+				<!--<p>Home / T-Shirt</p>-->
+				<h4>HUFT The Indian Indigo Print Dog Kurta</h4>
+				<p>Comfortable, lightweight, printed dog clothing</p>
+				<h4>$19.99</h4>
+				<select id="color9">
+					<option value="" disabled selected>Select Color</option>
+					<option value="Red">Red</option>
+					<option value="Blue">Blue</option>
+					<option value="Green">Green</option>
+					<option value="Yellow">Yellow</option>
+				</select>
+				<select id="size9">
+					<option value="" disabled selected>Select Size</option>
+					<option value="XL">XL</option>
+					<option value="L">L</option>
+					<option value="M">M</option>
+					<option value="S">S</option>
+				</select>
+				<input type="number" value="1" id="qty9">
+				<a href="#" class="btn" onclick="addToCart(9)">Add to Cart</a>
+				<h3>Product Details <i class="fa fa-indent"></i></h3> <br>
+				<li>Cotton poplin fabric</li>
+				<li>Velcro closure</li> 
+				<li>Wooden button accents</li>
+				<li>Washable</li>
+				<li>Made In India</li>
+			</div>
+
+		</div>
+	</div>
+	
+	
+	<div class="small-container single-product product-10">
+		<div class="row">
+			<div class="col-2">
+				<img src="img/product-10.jpg" width="100%" id="productImg10">
+
+				<div class="small-img-row">
+					<div class="small-img-col">
+						<img src="img/product-10.jpg" width="100%" class="small-img10">
+					</div>
+					
+					<div class="small-img-col">
+						<img src="img/10-2.webp" width="100%" class="small-img10">
+					</div>
+
+					<div class="small-img-col">
+						<img src="img/10-3.webp" width="100%" class="small-img10">
+					</div>
+
+					<div class="small-img-col">
+						<img src="img/10-4.webp" width="100%" class="small-img10">
+					</div>
+				</div>
+			</div>
+
+			<div class="col-2">
+				
+				<h4>HUFT Twinning - T-Shirt For Humans</h4>
+				<p>Lightweight, comfortable & easy to wear</p>
+				<h4>$19.99</h4>
+				<select id="color10">
+					<option value="" disabled selected>Select Color</option>
+					<option value="Red">Red</option>
+					<option value="Blue">Blue</option>
+					<option value="Green">Green</option>
+					<option value="Yellow">Yellow</option>
+				</select>
+				<select id="size10">
+					<option value="" disabled selected>Select Size</option>
+					<option value="XL">XL</option>
+					<option value="L">L</option>
+					<option value="M">M</option>
+					<option value="S">S</option>
+				</select>
+				<input type="number" value="1" id="qty10">
+				<a href="#" class="btn" onclick="addToCart(10)">Add to Cart</a>
+				<h3>Product Details <i class="fa fa-indent"></i></h3> <br>
+				<li>Made From Cotton-Blend</li>
+				<li>Classic Round Neck</li>
+				<li>Soft, Lightweight & Comfortable</li>
+				<li>Easy To Wear</li>
+				<li>Made In India, With Love</li>
+			</div>
+
+		</div>
+	</div>
+	
+	
+	<div class="small-container single-product product-11">
+		<div class="row">
+			<div class="col-2">
+				<img src="img/product-11.jpg" width="100%" id="productImg11">
+
+				<div class="small-img-row">
+					<div class="small-img-col">
+						<img src="img/product-11.jpg" width="100%" class="small-img11">
+					</div>
+					
+					<div class="small-img-col">
+						<img src="img/11-2.jpg" width="100%" class="small-img11">
+					</div>
+
+					<div class="small-img-col">
+						<img src="img/11-3.webp" width="100%" class="small-img11">
+					</div>
+
+					<div class="small-img-col">
+						<img src="img/11-4.webp" width="100%" class="small-img11">
+					</div>
+				</div>
+			</div>
+
+			<div class="col-2">
+				<h4>HUFT Twinning - T-Shirt For Dogs</h4>
+				<p>Lightweight, comfortable & easy to wear</p>
+				<h4>$19.99</h4>
+				<select id="color11">
+					<option value="" disabled selected>Select Color</option>
+					<option value="Red">Red</option>
+					<option value="Blue">Blue</option>
+					<option value="Green">Green</option>
+					<option value="Yellow">Yellow</option>
+				</select>
+				<select id="size11">
+					<option value="" disabled selected>Select Size</option>
+					<option value="XL">XL</option>
+					<option value="L">L</option>
+					<option value="M">M</option>
+					<option value="S">S</option>
+				</select>
+				<input type="number" value="1" id="qty11">
+				<a href="#" class="btn" onclick="addToCart(11)">Add to Cart</a>
+				<h3>Product Details <i class="fa fa-indent"></i></h3> <br>
+				
+				<li>Made From Cotton-Blend</li>
+				<li>Classic Round Neck</li>
+				<li>Soft, Lightweight & Comfortable</li>
+				<li>Easy To Wear</li>
+				<li>Made In India, With Love</li>
+			
+			</div>
+
+		</div>
+	</div>
+
+	<div class="small-container single-product product-12">
+		<div class="row">
+			<div class="col-2">
+				<img src="img/product-12.jpg" width="100%" id="productImg12">
+
+				<div class="small-img-row">
+					<div class="small-img-col">
+						<img src="img/product-12.jpg" width="100%" class="small-img12">
+					</div>
+					<div class="small-img-col">
+						<img src="img/12-2.jpg" width="100%" class="small-img12">
+					</div>
+					<div class="small-img-col">
+						<img src="img/11-2.jpg" width="100%" class="small-img12">
+					</div>
+					<div class="small-img-col">
+						<img src="img/sg.webp" width="100%" class="small-img12">
+					</div>
+					
+				</div>
+			</div>
+
+			<div class="col-2">
+				<h4>HUFT Bloom Wildly Scarf For Cats</h4>
+				<p>Elegant, printed accessories</p>
+				<h4>$5.00</h4>
+				<select id="color12">
+					<option value="" disabled selected>Select Color</option>
+					<option value="Red">Red</option>
+					<option value="Blue">Blue</option>
+					<option value="Green">Green</option>
+					<option value="Yellow">Yellow</option>
+				</select>
+				<select id="size12">
+					<option value="" disabled selected>Select Size</option>
+					<option value="XL">XL</option>
+					<option value="L">L</option>
+					<option value="M">M</option>
+					<option value="S">S</option>
+				</select>
+				<input type="number" value="1" id="qty12">
+				<a href="#" class="btn" onclick="addToCart(12)" >Add to Cart</a>
+				<h3>Product Details <i class="fa fa-indent"></i></h3> <br>
+				
+				<li>Fabric: Shell - 100% polyester</li>
+				<li>lining - 100% cotton</li>
+				<li>Ribbon and cotton lace</li>
+				<li>Washable</li>
+				<li>Made In India, With Love</li>
+			
+			</div>
+
+		</div>
+	</div>
+	<!-- Single Product Details End -->
+	
+	<div class="small-container">
+		<div class="row row-2">
+			<h2>Related Products</h2>
+			<p>View More</p>
+		</div>
+	</div>
+
+	<!--Featured & Latest Product Section Start -->
+	<div class="small-container">
+		<div class="row">
+			<!--Latest Product-5 -->
+			<div class="col-4">
+				<a href="product-details.html?9">
+				<img src="img/product-9.jpg">
+				<h4>HUFT Indian Indigo Print Kurta</h4>
+				<p>Comfortable, lightweight, printed dog</p>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p>$19.99</p>
+				</a>
+			</div>
+
+			<!--Latest Product-6 -->
+			<div class="col-4">
+				<a href="product-details.html?10">
+				<img src="img/product-10.jpg">
+				<h4>HUFT Twinning - TShirt For Human</h4>
+				<p>Lightweight, comfortable & easy wear</p>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p>$19.99</p>
+				</a>
+			</div>
+
+			<!--Latest Product-7 -->
+			<div class="col-4">
+				<a href="product-details.html?11">
+				<img src="img/product-11.jpg">
+				<h4>HUFT Twinning - T-Shirt For Dogs</h4>
+				<p>Lightweight, comfortable & easy wear</p>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+				</div>
+				<p>$19.99</p>
+				</a>
+			</div>
+
+			<!--Latest Product-8 -->
+			<div class="col-4">
+				<a href="product-details.html?12">
+				<img src="img/product-12.jpg">
+				<h4>HUFT Bloom Wildly Scarf For Cats</h4>
+				<p>Elegant, printed accessories</p>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p>$5.00</p>
+				</a>
+			</div>
+		</div>
+
+	</div>
+	<!-- Featured & Latest Product Section End -->
+
+	<!-- Footer Section Start-->
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-1">
+					<h3>Download Our App</h3>
+					<p>Download App for Android and IOS Device</p>
+					<div class="app-logo">
+						<img src="img/play-store.png">
+						<img src="img/app-store.png">
+					</div>
+				</div>
+
+				<div class="footer-col-2">
+					<img src="img/logo-black.PNG">
+					<p> Collars, Leashes, Harnesses | HUFT Offers | Dog Clothes | Dog T-shirts & Shirts</p>
+				</div>
+
+				<div class="footer-col-3">
+					<h3>Useful Link</h3>
+					<ul>
+						<li>Cuppons</li>
+						<li>Blog Post</li>
+						<li>Return Policy</li>
+						<li>Join Appiliate</li>
+					</ul>
+				</div>
+
+				<div class="footer-col-4">
+					<h3>Follow us</h3>
+					<ul>
+						<li>Facebook</li>
+						<li>Twitter</li>
+						<li>Instagram</li>
+						<li>YouTube</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<p class="copyright">&#169; Copyright-2022 | Heads Up For Tails</p>
+		</div>
+	</div>
+	<!-- Footer Section End-->
+</body>
+</html>
